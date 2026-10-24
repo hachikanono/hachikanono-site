@@ -222,7 +222,7 @@
         .then(function (data) {
           if (note) {
             note.textContent = data.success
-              ? "送信内容を受け付けました。ありがとうございます。"
+              ? "お問い合わせを受け付けました。5営業日以内を目安に回答させていただきます。"
               : "送信に失敗しました。時間をおいて再度お試しください。";
           }
           if (data.success) contactForm.reset();
