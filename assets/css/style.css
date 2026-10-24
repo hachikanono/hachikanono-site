@@ -616,9 +616,12 @@ main.has-hero {
 .profile-photo {
   position: relative;
   margin-top: 40px;
+  /* グリッドで右の文章の高さまで伸びると、アイコンの下の余白まで吹き出しの反応範囲になるため */
+  align-self: start;
 }
 
 .profile-photo img {
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
