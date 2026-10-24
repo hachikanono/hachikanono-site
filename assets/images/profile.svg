@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <rect x="0" y="0" width="600" height="600" fill="#F0F0F0"/>
+  <rect x="0.5" y="0.5" width="599" height="599" fill="none" stroke="#DDDDDD" stroke-width="1"/>
+  <line x1="0" y1="0" x2="600" y2="600" stroke="#DDDDDD" stroke-width="1"/>
+  <line x1="600" y1="0" x2="0" y2="600" stroke="#DDDDDD" stroke-width="1"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="21" fill="#999999" letter-spacing="1">PROFILE</text>
+  <text x="50%" y="333.0" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" fill="#BBBBBB">PHOTO PLACEHOLDER</text>
+</svg>
