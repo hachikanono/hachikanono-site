@@ -47,12 +47,12 @@
   var profileBubble = document.querySelector(".profile-bubble");
   /* NOTE: keep "あなたは何が好き？" (like-2) last — add new bubbles above it */
   var PROFILE_BUBBLE_IMAGES = [
-    { src: "assets/images/like-1.png", height: 153 },
-    { src: "assets/images/like-3.png", height: 130 },
-    { src: "assets/images/like-4.png", height: 153 },
-    { src: "assets/images/like-5.png", height: 165 },
-    { src: "assets/images/like-6.png", height: 195 },
-    { src: "assets/images/like-2.png", height: 153 }
+    { src: "assets/images/like-1.png", height: 153, width: 122 },
+    { src: "assets/images/like-3.png", height: 130, width: 75 },
+    { src: "assets/images/like-4.png", height: 153, width: 115 },
+    { src: "assets/images/like-5.png", height: 165, width: 113 },
+    { src: "assets/images/like-6.png", height: 195, width: 168 },
+    { src: "assets/images/like-2.png", height: 153, width: 106 }
   ];
 
   var profileBubbleIndex = 0;
@@ -69,6 +69,8 @@
       profileBubble.classList.remove("is-active");
       profileBubble.src = pick.src;
       profileBubble.style.height = pick.height + "px";
+      // 幅も先に固定して、画像の読み込み前後で位置がずれないようにする
+      profileBubble.style.width = pick.width + "px";
       // 新しい画像の描画準備ができてから表示する
       var show = function () { if (profileBubbleHovering) profileBubble.classList.add("is-active"); };
       if (profileBubble.decode) profileBubble.decode().then(show, show);
