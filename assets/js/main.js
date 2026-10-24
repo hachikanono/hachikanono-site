@@ -56,16 +56,26 @@
   ];
 
   var profileBubbleIndex = 0;
+  var profileBubbleHovering = false;
 
   if (profilePhoto && profileBubble) {
+    // 初回ホバーで画像の読み込みが間に合わず、前の吹き出しが一瞬見えるのを防ぐため先読みしておく
+    PROFILE_BUBBLE_IMAGES.forEach(function (b) { new Image().src = b.src; });
+
     profilePhoto.addEventListener("mouseenter", function () {
       var pick = PROFILE_BUBBLE_IMAGES[profileBubbleIndex];
       profileBubbleIndex = (profileBubbleIndex + 1) % PROFILE_BUBBLE_IMAGES.length;
+      profileBubbleHovering = true;
+      profileBubble.classList.remove("is-active");
       profileBubble.src = pick.src;
       profileBubble.style.height = pick.height + "px";
-      profileBubble.classList.add("is-active");
+      // 新しい画像の描画準備ができてから表示する
+      var show = function () { if (profileBubbleHovering) profileBubble.classList.add("is-active"); };
+      if (profileBubble.decode) profileBubble.decode().then(show, show);
+      else show();
     });
     profilePhoto.addEventListener("mouseleave", function () {
+      profileBubbleHovering = false;
       profileBubble.classList.remove("is-active");
     });
   }
