@@ -33,7 +33,7 @@ window.WORKS = [
     story: "月例ガンガンJOKER新人マンガ賞 作画部門 奨励賞受賞作品。",
     thumbnail: "sakuga-bumon.jpg",
     externalLink: "https://x.com/hachikanono39/status/2113247053841326183?s=20",
-    linkLabel: "VIEW ON X",
+    linkLabel: "READ ON X",
     featured: false
   }
 ];
