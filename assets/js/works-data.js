@@ -16,7 +16,7 @@ window.WORKS = [
     description: "クラスのみんなから好かれる光と、みんなから怖がられている憂夜。そんな二人の意外な関係——。<br>月例ガンガンJOKER新人マンガ賞 特別奨励賞受賞作品。",
     story: "クラスのみんなから好かれる光と、みんなから怖がられている憂夜。そんな二人の意外な関係——。<br>月例ガンガンJOKER新人マンガ賞 特別奨励賞受賞作品。",
     thumbnail: "akogare-no-uragawa.jpg",
-    externalLink: null,
+    externalLink: "https://x.com/hachikanono39/status/2120133374602052020?s=20",
     linkLabel: "READ ON X",
     featured: false
   },
