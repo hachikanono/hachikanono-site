@@ -5,6 +5,22 @@
  */
 window.WORKS = [
   {
+    slug: "kawaii-kareshi",
+    title: "かわいい彼氏の過保護な守りかた",
+    titleEn: "KAWAII KARESHI",
+    type: "GANMA!掲載",
+    pages: "10P",
+    year: "2026",
+    date: "2026.11",
+    genre: "BLラブコメ",
+    description: "「激重ヤンデレ攻め」✖️「ふわふわ天然受け」が送る、ちょっぴり危うい狂愛ラブコメ♡<br>「俺以外の人間を半径50㎝以内に入れたらダメ」<br>大学生・ハルの彼氏は、重すぎるヤンデレ彼氏・文。周りから恐れられ心配される文のヤンデレ具合だったが、ハルは全く気にしていないどころかそんな文にベタ惚れ中…。しかし、そんな二人には実は誰も知らない『裏の顔』があり…？<br>マンガ大賞2ndノミネート作品。",
+    story: "「激重ヤンデレ攻め」✖️「ふわふわ天然受け」が送る、ちょっぴり危うい狂愛ラブコメ♡<br>「俺以外の人間を半径50㎝以内に入れたらダメ」<br>大学生・ハルの彼氏は、重すぎるヤンデレ彼氏・文。周りから恐れられ心配される文のヤンデレ具合だったが、ハルは全く気にしていないどころかそんな文にベタ惚れ中…。しかし、そんな二人には実は誰も知らない『裏の顔』があり…？<br>マンガ大賞2ndノミネート作品。",
+    thumbnail: "kawaii-kareshi.jpg",
+    externalLink: "https://ganma.jp/web/magazine/ganma_award2026_2nd_004",
+    linkLabel: "READ ON GANMA!",
+    featured: true
+  },
+  {
     slug: "akogare-no-uragawa",
     title: "憧れの裏側",
     titleEn: "AKOGARE NO URAGAWA",
